@@ -4,10 +4,10 @@
 
 Built for **Hack with YOU: Halloween Edition** (Track 3, *The Open Haunt*).
 
-![Ghost Grip's approved bedroom plan: the camera robot on its rail beside the bed, Maya with her flashlight by the wardrobe, the robot camera's view top right, and the crew chat on the left](docs/Screenshot1.png)
+![Ghost Grip's approved bedroom plan: the camera robot on its rail beside the bed, Maya with her flashlight by the wardrobe, the robot camera's view top right, and the crew chat on the left](docs/Screenshot1.jpg)
 *The closet scare, approved after 3 revisions: 23 problems caught before set and 103 cm closest approach to the cast. Top right is the shot through the robot's camera, after The Babadook (2014). On the left is the crew chat, where the Reference Scout cites a verified clip.*
 
-![Ghost Grip's approved bathroom plan: the arm reaching toward the mirror over Nora's shoulder, the ghost in the bathtub, the director's notes and the Ship it panel on the left](docs/Screenshot2.png)
+![Ghost Grip's approved bathroom plan: the arm reaching toward the mirror over Nora's shoulder, the ghost in the bathtub, the director's notes and the Ship it panel on the left](docs/Screenshot2.jpg)
 *The mirror reveal, approved after 2 revisions (11 problems caught): the arm frames Nora in the mirror cabinet while the pale woman waits in the tub. On the left are the director's streamed notes and the Ship it panel, which sends the call sheet to Slack through One or downloads the rig program as CSV.*
 
 ## What you see in the demo
