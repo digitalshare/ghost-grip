@@ -1,8 +1,14 @@
 # 🎥 Ghost Grip
 
-**An AI camera-robot crew for horror films.** You describe a scene. A CrewAI crew finds real reference shots on the live web, designs camera moves, and hands them to a robot simulator. The simulator rejects anything a 6-axis motion-control arm can't physically do, and the crew keeps revising until every move is reachable, within speed limits and safe around the actors. You watch the arm perform it in a 3D preview with a picture-in-picture view through the camera's own lens. Then the Producer agent sends the call sheet to the crew's real Gmail and Calendar through One.
+**An AI camera-robot crew for horror films.** You describe a scene. A CrewAI crew finds real reference shots on the live web, designs camera moves, and hands them to a robot simulator. The simulator rejects anything a 6-axis motion-control arm can't physically do, and the crew keeps revising until every move is reachable, within speed limits and safe around the actors. You watch the arm perform it in a 3D preview with a picture-in-picture view through the camera's own lens. Then the Producer agent posts the call sheet to the crew's Slack through One (Gmail and Calendar are wired in for when those apps are connected).
 
 Built for **Hack with YOU: Halloween Edition** (Track 3, *The Open Haunt*).
+
+![The rig simulator stops the draft: the arm's upper link (red) would pass 57.3 cm from the actor Nora, inside the 57.5 cm safety clearance (red rings)](docs/simulator-catches-collision.jpg)
+*The draft plan, frozen by the rig simulator: the upper arm (red) would pass 57.3 cm from Nora, inside the 57.5 cm clearance (rings). The agents revised until every move passed.*
+
+![An approved plan: the camera robot on its rail in the corridor set, the walking actor and two ghost figures, the camera's view top right, and the Rig Engineer's list of rejected draft problems on the left](docs/approved-plan.jpg)
+*The approved corridor plan after 3 revisions. On the left, the 8 problems the simulator caught in the draft; top right, the shot through the robot's camera.*
 
 ## What you see in the demo
 
