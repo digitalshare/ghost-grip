@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghost Grip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script type="importmap">
+    { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    } }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="logo">Ghost Grip</span><span class="tag">an agent crew that plans horror camera-robot moves, and a simulator that won't let them hurt anyone</span></div>
+    <div class="status" id="status"></div>
+  </header>
+  <div id="stats" class="stats hidden"></div>
+
+  <main>
+    <aside id="panel">
+      <section class="card" id="input-card">
+        <div class="row">
+          <select id="scene-pick" title="Example scenes"></select>
+          <select id="run-pick" title="Replay a saved run"><option value="">Saved runs…</option></select>
+        </div>
+        <textarea id="scene-text" rows="4" placeholder="Describe the scene, the set and the scare…"></textarea>
+        <button id="roll" class="primary">● Roll camera</button>
+      </section>
+      <div id="replay-badge" class="badge hidden">Replay of a saved run · no live partner calls</div>
+      <div id="error" class="error hidden"></div>
+
+      <section id="chat" aria-live="polite"></section>
+
+      <section class="card hidden" id="dispatch-card">
+        <h3>Ship it <small>One → Slack · Gmail · Calendar</small></h3>
+        <div class="row"><label for="slack">Slack</label><input id="slack" type="text" placeholder="#ghost-grip-test"></div>
+        <div class="row"><label for="to">Email</label><input id="to" type="email" placeholder="optional · needs Gmail on One"></div>
+        <div class="row"><label for="when">Call</label><input id="when" type="datetime-local"></div>
+        <div class="row gap">
+          <button id="send" class="primary">Send call sheet via One</button>
+          <a id="export" class="button" download>⬇ Rig program (.csv)</a>
+        </div>
+        <button id="preview-sheet" class="link">Preview call sheet</button>
+        <pre id="sheet" class="sheet hidden"></pre>
+      </section>
+    </aside>
+
+    <section id="stage">
+      <div id="big"></div>
+      <div id="pip"><div class="pip-label" id="pip-label"></div><button id="swap" title="Swap views">⇄</button></div>
+      <div id="rounds" class="hidden"></div>
+      <div id="compare" class="hidden">
+        <div class="cmp-bar"><span id="cmp-title"></span><button id="cmp-close" title="Close (Esc)">✕ Close</button></div>
+        <div id="cmp-left"></div>
+        <div id="cmp-left-label" class="cmp-label"></div>
+        <div id="cmp-right-label" class="cmp-label"></div>
+      </div>
+      <div id="caption" class="hidden"></div>
+      <div id="subtitle" class="hidden"></div>
+      <div id="hud" class="hidden mono"></div>
+      <div id="empty" class="empty">
+        <p class="big">Describe a horror scene and press <b>Roll camera</b>.</p>
+        <p>A crew of agents breaks it down, finds real reference shots, and designs moves for a 6-axis camera robot.
+          A physics simulator rejects anything unreachable, too fast, or too close to an actor, and the crew keeps revising until every move is safe.</p>
+        <p class="hint">or pick a saved run to replay</p>
+      </div>
+      <div id="loading" class="hidden">Loading the cast…</div>
+      <div id="transport">
+        <div id="shot-tabs"></div>
+        <button id="play" title="Play / pause (space)">▶</button>
+        <input id="scrub" type="range" min="0" max="1000" value="0" aria-label="Shot time">
+        <span id="time" class="mono">0.00s</span>
+        <div class="seg" role="group" aria-label="View">
+          <button id="view-rig" class="active">Rig</button><button id="view-cam">Camera</button>
+        </div>
+        <button id="cut" class="primary" disabled title="Play every shot as an edited sequence">▶ Play the scene</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
