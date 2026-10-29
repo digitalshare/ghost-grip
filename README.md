@@ -4,11 +4,11 @@
 
 Built for **Hack with YOU: Halloween Edition** (Track 3, *The Open Haunt*).
 
-![The rig simulator stops the draft: the arm's upper link (red) would pass 57.3 cm from the actor Nora, inside the 57.5 cm safety clearance (red rings)](docs/simulator-catches-collision.jpg)
-*The draft plan, frozen by the rig simulator: the upper arm (red) would pass 57.3 cm from Nora, inside the 57.5 cm clearance (rings). The agents revised until every move passed.*
+![Ghost Grip's approved bedroom plan: the camera robot on its rail beside the bed, Maya with her flashlight by the wardrobe, the robot camera's view top right, and the crew chat on the left](docs/Screenshot1.png)
+*The closet scare, approved after 3 revisions: 23 problems caught before set and 103 cm closest approach to the cast. Top right is the shot through the robot's camera, after The Babadook (2014). On the left is the crew chat, where the Reference Scout cites a verified clip.*
 
-![An approved plan: the camera robot on its rail in the corridor set, the walking actor and two ghost figures, the camera's view top right, and the Rig Engineer's list of rejected draft problems on the left](docs/approved-plan.jpg)
-*The approved corridor plan after 3 revisions. On the left, the 8 problems the simulator caught in the draft; top right, the shot through the robot's camera.*
+![Ghost Grip's approved bathroom plan: the arm reaching toward the mirror over Nora's shoulder, the ghost in the bathtub, the director's notes and the Ship it panel on the left](docs/Screenshot2.png)
+*The mirror reveal, approved after 2 revisions (11 problems caught): the arm frames Nora in the mirror cabinet while the pale woman waits in the tub. On the left are the director's streamed notes and the Ship it panel, which sends the call sheet to Slack through One or downloads the rig program as CSV.*
 
 ## What you see in the demo
 
